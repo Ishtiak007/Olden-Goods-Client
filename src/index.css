@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttonProject{
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-radius: 25px;
+    color: white;
+    font-weight: 300;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+    border: 1px solid orange;
+}
+.buttonProject:hover{
+	background-color: var(--bg-clr-two);
+	color: orange;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid yellowgreen;
+}
+
+
+.buttonProject2{
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-radius: 25px;
+    color: white;
+    font-weight: 300;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+    border: 1px solid yellowgreen;
+}
+.buttonProject2:hover{
+	background-color: var(--bg-clr-two);
+	color: orange;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid orange;
+}

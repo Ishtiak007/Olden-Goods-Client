@@ -1,0 +1,65 @@
+[
+    {
+        "_id":1,
+        "image": "https://i.ibb.co/Hrr1b94/gadgets.png",
+        "title": "Electronics Elegance: Tailor Your Choices with Precision Selection!",
+        "category": "electronics",
+        "categoryName":"Electronics"
+    },
+    {
+        "_id":2,
+        "image": "https://i.ibb.co/hLqf1H8/car.png",
+        "title": "Drive Your Style: Navigate Choices in the Vehicles Category!",
+        "category": "vehicles",
+        "categoryName":"Vehicles"
+    },
+    {
+        "_id":3,
+        "image": "https://i.ibb.co/qnR9dpd/mansion.png",
+        "title": "Home Harmony: Curate Your Lifestyle with Select Choices Today",
+        "category": "homeAndLiving",
+        "categoryName":"Home And Living"
+    },
+    {
+        "_id":4,
+        "image": "https://i.ibb.co/p3wfWKD/vest.png",
+        "title": "Elevate Your Style: Explore Men's Fashion & Grooming Choices Now!",
+        "category": "mensFashion",
+        "categoryName":"Men's Fashion & Grooming"
+    },
+    {
+        "_id":5,
+        "image": "https://i.ibb.co/2nj5TpN/slipper.png",
+        "title": "Elevate Your Style: Explore Women's Fashion & Beauty Choices Now!",
+        "category": "womensFashion",
+        "categoryName":"Women's Fashion & Beauty"
+    },
+    {
+        "_id":6,
+        "image": "https://i.ibb.co/gZ9Lrcv/physical.png",
+        "title": "Fuel Your Passion: Explore Hobbies-Sports for Exciting Choices Today!",
+        "category": "hobbiesSports",
+        "categoryName":"Hobbies-Sports"
+    },
+    {
+        "_id":7,
+        "image": "https://i.ibb.co/ZJY5xxT/storage-box.png",
+        "title": "Kid-Friendly Picks: Choose Delightful Goods for Little Ones Here!",
+        "category": "kids",
+        "categoryName":"Kids"
+    },
+    {
+        "_id":8,
+        "image": "https://i.ibb.co/Fsb0BBn/scholarship.png",
+        "title": "Empower Minds: Select Educational Goods for Inspired Learning Journeys!",
+        "category": "education",
+        "categoryName":"Education"
+    },
+    {
+        "_id":9,
+        "image": "https://i.ibb.co/9Z5htNt/pets.png",
+        "title": "Pamper Your Pets: Choose from Delightful Options in the Pet Category!",
+        "category": "pets",
+        "categoryName":"Pets and Animal"
+    }
+]
