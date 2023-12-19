@@ -8,12 +8,11 @@ const RegisterLink = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className='lg:w-1/2 space-y-5 p-4'>
-                        <h3 className='text-orange-600 text-2xl font-bold'>About Our Food Quality . . . . </h3>
-                        <h1 className="text-3xl font-bold">Elevate Your Tastebuds with Our Unparalleled Food Quality</h1>
-                        <div className="py-3">Welcome to Food Fastival! Indulge in a culinary journey where exquisite flavors and impeccable quality converge.
-                            <p className='my-2'>Our restaurant promises a delectable experience with meticulously crafted dishes using only the finest ingredients. Savor the excellence in every bite, as we redefine your dining expectations with our commitment to exceptional food quality</p>
-                        </div>
-                        <Link to=''><button className="px-4 py-2 bg-[#FF4860] rounded-2xl btn-outline text-white font-bold">Order Now From Menu</button></Link>
+                        <h3 className='text-orange-600 text-2xl font-bold'>Best buying and selling platform out there</h3>
+                        <h1 className="text-3xl font-bold">Register for exclusive deals and personalized shopping!</h1>
+                        <p>Welcome to Olden Goods! a Open buying and selling platform, </p>
+                        <p>Unlock exclusive deals and personalized shopping. Register now for a seamless online shopping experience for all!</p>
+                        <Link to=''><button className="buttonProject3 mt-5">Register Now</button></Link>
                     </div>
                     <div className='lg:w-1/2 relative'>
                         <img src={img1} className="w-3/4 rounded-lg shadow-2xl border-8  border-white " />

@@ -6,7 +6,7 @@ const CategoryCard = ({ data }) => {
     return (
         <Link to='/timeline'>
             <div className="card lg:w-96 md:w-96 bg-base-100 shadow-xl">
-                <div className="card-body h-32">
+                <div className="card-body lg:h-32">
                     <h2 className="card-title uppercase">{categoryName}</h2>
                     <p>{title}</p>
                 </div>
