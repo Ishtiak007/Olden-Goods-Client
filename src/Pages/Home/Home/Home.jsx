@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
 import CategoryOverview from "../CategoryOverview/CategoryOverview";
 import RegisterLink from "../RegisterLink/RegisterLink";
+import Testimonial from "../Tesitmonial/Testimonial";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
             <Category></Category>
             <CategoryOverview></CategoryOverview>
             <RegisterLink></RegisterLink>
+            <Testimonial></Testimonial>
         </div>
     );
 };
