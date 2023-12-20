@@ -26,8 +26,8 @@ const Testimonial = () => {
             .then(data => setReviews(data))
     }, [])
     return (
-        <section className="my-20">
-            <SectionTitle heading={'Regular Buyer about us'}></SectionTitle>
+        <section className="">
+            <SectionTitle heading={'Feedback about our platform'} subHeading={'Our regular seller and buyer about our platform'}></SectionTitle>
             <Swiper spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
@@ -42,7 +42,7 @@ const Testimonial = () => {
                 className="mySwiper">
                 {
                     reviews.map(review => <SwiperSlide key={review._id}>
-                        <div className="lg:my-16 lg:mx-24 flex flex-col items-center lg:max-w-2xl p-3 shadow-xl rounded-2xl bg-slate-50">
+                        <div className="lg:my-16 lg:mx-24 flex flex-col items-center lg:max-w-2xl p-3 shadow-xl rounded-2xl">
 
                             <h3 className="lg:text-2xl text-orange-400 flex items-center gap-2 my-3">{review.name}
                                 <p><FaQuoteRight className="text-5xl mx-auto text-gray-200"></FaQuoteRight></p></h3>
