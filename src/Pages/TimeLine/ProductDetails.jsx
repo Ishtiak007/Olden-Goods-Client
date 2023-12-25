@@ -12,13 +12,47 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
+import useAuth from '../../Components/Hooks/useAuth';
+import Swal from 'sweetalert2';
 
 
 
 const ProductDetails = () => {
     const productDetails = useLoaderData();
     const { image1, image2, image3, image4, name, age, date, category, longDescription, price, phone, location, uploaderName, email } = productDetails;
+    const { user } = useAuth();
+
+
+    const handleAddInformation = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = user?.displayName;
+        const buyerEmail = user?.email;
+        const phoneNumber = form.phoneNumber.value;
+        const buyerAddress = form.address.value;
+
+
+        const UserInformation = {
+            name, buyerEmail, phoneNumber, buyerAddress, image, petName, petAge, date, petLocation, longDescription, category, email
+        }
+        axiosSecure.post('/adoptionUsers', UserInformation)
+            .then(res => {
+
+                if (res.data.insertedId) {
+                    Swal.fire({
+                        position: "top-right",
+                        icon: "success",
+                        title: `${name} added to the cart`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+            })
+
+
+    }
+
 
     return (
         <div>
@@ -56,15 +90,53 @@ const ProductDetails = () => {
                 <div className="flex-1">
                     <div className="card w-full bg-base-100 shadow-xl">
                         <div className="card-body">
-                            <h2 className="card-title font-bold">Name : {name}</h2>
-                            <p className="font-bold">Age: {age} Month</p>
-                            <p className="font-bold">Category: {category}</p>
-                            <p className="font-bold">Adding Date: {date}</p>
-                            <p className=" text-orange-700 font-bold badge badge-outline p-4">Price : {price}</p>
+                            <h2 className="card-title font-bold">Product : {name}</h2>
+                            <p className="font-medium">Age: {age} Month</p>
+                            <p className="font-medium">Category: {category}</p>
+                            <p className="font-medium">Post Date: {date}</p>
+                            <p className=" text-orange-700 font-bold badge badge-outline p-4">Price : {price} $</p>
                             <p className="text-gray-500">{longDescription}</p>
                         </div>
-                        <div className='flex justify-center my-7'>
-                            <button className='buttonProject3 w-1/3'>Buy Now</button>
+                        <div className="card-actions justify-center  my-4">
+                            <Link><button onClick={() => document.getElementById('my_modal_5').showModal()} className="buttonProject3">Buy Now</button></Link>
+                            {/* Open the modal using document.getElementById('ID').showModal() method */}
+                            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                                <div className="modal-box">
+                                    <h3 className="font-bold text-lg text-center">Please Full-fill the form</h3>
+                                    <div className="modal-action">
+                                        <form onSubmit={handleAddInformation} method="dialog" className="card-body">
+                                            <div className="form-control">
+                                                <label className="label">
+                                                    <span className="label-text font-semibold">Name</span>
+                                                </label>
+                                                <input type="text" name="name" defaultValue={user?.displayName} disabled placeholder="Name" className="input input-bordered" required />
+                                            </div>
+                                            <div className="form-control">
+                                                <label className="label">
+                                                    <span className="label-text font-semibold">Email</span>
+                                                </label>
+                                                <input type="email" name="email" defaultValue={user?.email} disabled placeholder="email" className="input input-bordered" required />
+                                            </div>
+                                            <div className="form-control">
+                                                <label className="label">
+                                                    <span className="label-text font-semibold">Phone Number</span>
+                                                </label>
+                                                <input type="text" name="phoneNumber" placeholder="Your Phone Number" className="input input-bordered" required />
+                                            </div>
+                                            <div className="form-control">
+                                                <label className="label">
+                                                    <span className="label-text font-semibold">Your Address</span>
+                                                </label>
+                                                <input type="text" name="address" placeholder="Your Address" className="input input-bordered" required />
+                                            </div>
+                                            <div className="form-control mt-3">
+                                                <button className="buttonProject3">Submit</button>
+                                                <p className="text-center my-1">Press ESC key to exit</p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
