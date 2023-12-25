@@ -6,6 +6,7 @@ import Home from "../../Pages/Home/Home/Home";
 import TimeLine from "../../Pages/TimeLine/TimeLine";
 import ProductDetails from "../../Pages/TimeLine/ProductDetails";
 import Login from "../../Pages/LoginPage/Login";
+import Register from "../../Pages/RegisterPage/Register";
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     },
