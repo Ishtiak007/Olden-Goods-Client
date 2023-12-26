@@ -58,10 +58,8 @@ const Register = () => {
         <div className="hero min-h-screen bg-base-200">
 
             <div className="hero-content flex-col lg:flex-row">
-                <div className="mr-12 w-1/2">
-                    <img className="rounded-lg shadow-2xl border-8  border-sky-300 " src={img} alt="" />
-                </div>
-                <div className="card bg-blue-500 bg-opacity-20 shadow-xl lg:max-w-[500px] max-w-[280px]">
+
+                <div className="card bg-blue-500 bg-opacity-20 shadow-xl lg:max-w-[500px] max-w-[280px] w-full">
 
                     <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                         <h1 className="text-center text-xl font-bold">Register</h1>
@@ -122,11 +120,14 @@ const Register = () => {
                             <button className="buttonProject3">Register Now</button>
                         </div>
 
-
                         <div>
-                            <p className="my-3">Already have an account? so, please <Link to='/login' className="text-blue-600 underline">Login</Link></p>
+                            <p className="my-3 text-center">Already have an account? so, please <Link to='/login' className="text-blue-600 underline">Login</Link></p>
                         </div>
                     </form>
+                </div>
+
+                <div className="mr-12 w-1/2">
+                    <img className="rounded-lg shadow-2xl border-8  border-sky-300 " src={img} alt="" />
                 </div>
             </div>
 

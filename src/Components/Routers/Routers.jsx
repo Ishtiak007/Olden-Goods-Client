@@ -7,6 +7,7 @@ import TimeLine from "../../Pages/TimeLine/TimeLine";
 import ProductDetails from "../../Pages/TimeLine/ProductDetails";
 import Login from "../../Pages/LoginPage/Login";
 import Register from "../../Pages/RegisterPage/Register";
+import DashboardLayout from "../../Pages/Dashboard/DashboardLayout";
 
 export const router = createBrowserRouter([
     {
@@ -18,6 +19,14 @@ export const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
+            },
+            {
                 path: '/timeline',
                 element: <TimeLine></TimeLine>
             },
@@ -25,15 +34,11 @@ export const router = createBrowserRouter([
                 path: '/productDetails/:id',
                 element: <ProductDetails></ProductDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
-            },
-            {
-                path: '/login',
-                element: <Login></Login>
-            },
-            {
-                path: '/register',
-                element: <Register></Register>
             }
         ]
     },
+    {
+        path: 'dashboard',
+        element: <DashboardLayout></DashboardLayout>
+    }
 ]);

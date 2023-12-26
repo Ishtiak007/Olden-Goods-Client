@@ -80,7 +80,7 @@ const Login = () => {
                     <div className="lg:mr-12 lg:w-1/2">
                         <img className="rounded-lg shadow-2xl border-8  border-sky-300 " src={img} alt="" />
                     </div>
-                    <div className="card bg-gray-500 bg-opacity-20 shadow-xl lg:max-w-[500px] max-w-[280px]">
+                    <div className="card bg-gray-500 bg-opacity-20 shadow-xl lg:max-w-[500px] max-w-[280px]  w-full">
                         <form onSubmit={handleLogin} className='lg:p-5 p-2'>
                             <div>
                                 <p className="py-4 text-center text-xl font-semibold text-white-900">Login Here</p>
@@ -114,7 +114,7 @@ const Login = () => {
                                 </div>
                             </div>
                             <div>
-                                <p className="text-base my-3">Have nt Any an Account? So, Please <Link to='/register' className="text-blue-600 underline">Register</Link></p>
+                                <p className="text-base my-3">Create an account <Link to='/register' className="text-blue-600 underline">Register</Link></p>
                             </div>
                         </form>
                     </div>

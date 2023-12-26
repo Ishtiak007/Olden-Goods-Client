@@ -15,28 +15,30 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Link, useLoaderData } from 'react-router-dom';
 import useAuth from '../../Components/Hooks/useAuth';
 import Swal from 'sweetalert2';
+import useAxiosSecure from '../../Components/Hooks/useAxiosSecure';
 
 
 
 const ProductDetails = () => {
     const productDetails = useLoaderData();
-    const { image1, image2, image3, image4, name, age, date, category, longDescription, price, phone, location, uploaderName, email } = productDetails;
+    const { image1, image2, image3, image4, name, age, date, category, longDescription, price, uploaderName, uploaderPhone, uploaderLocation, uploaderEmail } = productDetails;
     const { user } = useAuth();
+    const axiosSecure = useAxiosSecure();
 
 
     const handleAddInformation = (e) => {
         e.preventDefault();
         const form = e.target;
-        const name = user?.displayName;
+        const buyerName = user?.displayName;
         const buyerEmail = user?.email;
         const phoneNumber = form.phoneNumber.value;
         const buyerAddress = form.address.value;
 
 
-        const UserInformation = {
-            name, buyerEmail, phoneNumber, buyerAddress, image, petName, petAge, date, petLocation, longDescription, category, email
+        const buyerProduct = {
+            buyerName, buyerEmail, phoneNumber, buyerAddress, image1, name, age, date, category, price, uploaderName, uploaderPhone, uploaderLocation, uploaderEmail
         }
-        axiosSecure.post('/adoptionUsers', UserInformation)
+        axiosSecure.post('/buyerProduct', buyerProduct)
             .then(res => {
 
                 if (res.data.insertedId) {
@@ -69,9 +71,9 @@ const ProductDetails = () => {
                                     <div className="card-body">
                                         <h1 className="text-2xl uppercase font-bold text-black">Details of : {name}</h1>
                                         <h2 className="text-center font-bold">Uploader Name : {uploaderName}</h2>
-                                        <p className='font-medium'>Contact Email : {email}</p>
-                                        <p className='font-medium'>Contact Number : {phone}</p>
-                                        <p className='font-medium'>{location}</p>
+                                        <p className='font-medium'>Contact Email : {uploaderEmail}</p>
+                                        <p className='font-medium'>Contact Number : {uploaderPhone}</p>
+                                        <p className='font-medium'>{uploaderLocation}</p>
                                     </div>
                                 </div>
                             </div>
