@@ -114,7 +114,7 @@ const Login = () => {
                                 </div>
                             </div>
                             <div>
-                                <p className="text-base my-3">Create an account <Link to='/register' className="text-blue-600 underline">Register</Link></p>
+                                <p className="text-base my-3 text-center">Create an account <Link to='/register' className="text-blue-600 underline">Register</Link></p>
                             </div>
                         </form>
                     </div>

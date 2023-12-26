@@ -2,6 +2,7 @@ import img from '../../../assets/image/bannerImg.jpg'
 import Marquee from "react-fast-marquee";
 import { FaUpload } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -18,8 +19,8 @@ const Banner = () => {
                     </Marquee>
                     <h1 className="mb-5 lg:text-5xl font-bold">Discover great deals, hassle-free buying. Sell easily, trade with trust</h1>
                     <div className='lg:flex justify-center gap-5'>
-                        <button className='buttonProject flex items-center gap-2 mt-2'>Uploade your products <FaUpload></FaUpload></button>
-                        <button className='buttonProject2 flex items-center gap-2 mt-2'>Buy your products <FaShoppingCart></FaShoppingCart></button>
+                        <Link to='/dashboard/addProduct'><button className='buttonProject flex items-center gap-2 mt-2'>Uploade your products <FaUpload></FaUpload></button></Link>
+                        <Link to='/timeline'><button className='buttonProject2 flex items-center gap-2 mt-2'>Buy your products <FaShoppingCart></FaShoppingCart></button></Link>
                     </div>
                 </div>
             </div>
