@@ -7,7 +7,7 @@ import useAxiosSecure from "../../../Components/Hooks/useAxiosSecure";
 
 
 const ManageAllProducts = () => {
-    const [products, refetch] = useProducts();
+    const [products, , refetch] = useProducts();
     const axiosSecure = useAxiosSecure();
 
     const handleDeleteProduct = (item) => {
