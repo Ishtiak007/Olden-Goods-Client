@@ -16,7 +16,7 @@ const Navbar = () => {
         <li><Link className='font-semibold text-white' to='/'>Contact Us</Link></li>
         <li><Link className='font-semibold text-white' to='/dashboard/addProduct'>Dashboard</Link></li>
         <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
-        <li><Link className='font-semibold text-white' to='/dashboard/buyerRequest'><span className="flex gap-2 items-center"><FaBell className="text-xl"></FaBell> <span className="text-yellow-300"><div className="badge badge-secondary">{whoRequest.length}</div></span></span></Link></li>
+        <li><Link className='font-semibold text-white' to='/dashboard/buyerRequest'><span className="flex gap-1 items-center"><FaBell className="text-xl"></FaBell> <span className="text-yellow-300"><div className="badge badge-secondary">{whoRequest.length}</div></span></span></Link></li>
 
     </>
     const handleLogOut = () => {

@@ -8,8 +8,8 @@ import useMyCart from "../../Components/Hooks/useMyCart";
 const DashboardLayout = () => {
     const { user } = useAuth();
     const [whoRequest,] = useBuyerRequest();
-    const { cart, } = useMyCart();
-    const isAdmin = false;
+    const [cart,] = useMyCart();
+    const isAdmin = true;
     return (
         <div>
             <div className="lg:flex">
@@ -23,25 +23,19 @@ const DashboardLayout = () => {
                                     <NavLink to='/dashboard/makeAdmin'>All Users / Make Admin</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/dashboard/manageAllPets'>Manage All Pets</NavLink>
+                                    <NavLink to='/dashboard/manageAllProducts'>Manage All Products</NavLink>
+                                </li>
+                                <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
+                                    <NavLink to='/dashboard/addProduct'>Add Your Product (Admin)</NavLink>
+                                </li>
+                                <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
+                                    <NavLink to='/dashboard/myAddedProducts'>Admin Added Products</NavLink>
+                                </li>
+                                <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
+                                    <NavLink to='/dashboard/buyerRequest'>Buyer Request <span className="text-yellow-300">({whoRequest.length})</span></NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/dashboard/allDonations'>All Donation Campaigns</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/dashboard/addPet'>Add a pet (Admin)</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/dashboard/createDonationCampaign'>Create Donation Campaign</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/dashboard/myAddedPets'>Admin added pets</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/dashboard/petAdoptor'>Adoption Request</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to='/dashboard/paymentHistory'>My Donations</NavLink>
+                                    <NavLink to='/dashboard/paymentHistory'>Payment History</NavLink>
                                 </li>
 
                             </>
@@ -50,7 +44,7 @@ const DashboardLayout = () => {
                                 <>
                                     <h1 className="text-center my-5 font-bold text-2xl">User Dashboard</h1>
                                     <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
-                                        <NavLink to='/dashboard/myCarts'>My Cart <span className="text-yellow-300">({cart.length})</span></NavLink>
+                                        <NavLink to='/dashboard/myCarts'>My Cart <span className="text-green-300">({cart.length})</span></NavLink>
                                     </li>
                                     <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
                                         <NavLink to='/dashboard/addProduct'>Add Your Product</NavLink>
@@ -62,7 +56,7 @@ const DashboardLayout = () => {
                                         <NavLink to='/dashboard/buyerRequest'>Buyer Request <span className="text-yellow-300">({whoRequest.length})</span></NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='/dashboard/paymentHistory'>My Donations</NavLink>
+                                        <NavLink to='/dashboard/paymentHistory'>Payment History</NavLink>
                                     </li>
                                 </>
                         }
