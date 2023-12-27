@@ -60,7 +60,7 @@ const AddProduct = () => {
                 uploaderPhone: data.uploaderPhone,
                 uploaderLocation: data.uploaderLocation,
                 uploaderName: user?.displayName,
-                uploaderEmail: user?.email,
+                email: user?.email,
             }
             const productResult = await axiosSecure.post('/products', product);
             console.log(productResult.data)

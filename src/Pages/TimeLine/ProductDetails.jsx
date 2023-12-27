@@ -21,7 +21,7 @@ import useAxiosSecure from '../../Components/Hooks/useAxiosSecure';
 
 const ProductDetails = () => {
     const productDetails = useLoaderData();
-    const { image1, image2, image3, image4, name, age, date, category, longDescription, price, uploaderName, uploaderPhone, uploaderLocation, uploaderEmail } = productDetails;
+    const { image1, image2, image3, image4, name, age, date, category, longDescription, price, uploaderName, uploaderPhone, uploaderLocation, email } = productDetails;
     const { user } = useAuth();
     const axiosSecure = useAxiosSecure();
 
@@ -36,7 +36,7 @@ const ProductDetails = () => {
 
 
         const buyerProduct = {
-            buyerName, buyerEmail, phoneNumber, buyerAddress, image1, name, age, date, category, price, uploaderName, uploaderPhone, uploaderLocation, uploaderEmail
+            buyerName, buyerEmail, phoneNumber, buyerAddress, image1, name, age, date, category, price, uploaderName, uploaderPhone, uploaderLocation, email
         }
         axiosSecure.post('/buyerProduct', buyerProduct)
             .then(res => {
@@ -51,8 +51,6 @@ const ProductDetails = () => {
                     });
                 }
             })
-
-
     }
 
 
@@ -71,7 +69,7 @@ const ProductDetails = () => {
                                     <div className="card-body">
                                         <h1 className="text-2xl uppercase font-bold text-black">Details of : {name}</h1>
                                         <h2 className="text-center font-bold">Uploader Name : {uploaderName}</h2>
-                                        <p className='font-medium'>Contact Email : {uploaderEmail}</p>
+                                        <p className='font-medium'>Contact Email : {email}</p>
                                         <p className='font-medium'>Contact Number : {uploaderPhone}</p>
                                         <p className='font-medium'>{uploaderLocation}</p>
                                     </div>

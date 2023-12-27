@@ -10,6 +10,8 @@ import Register from "../../Pages/RegisterPage/Register";
 import DashboardLayout from "../../Pages/Dashboard/DashboardLayout";
 import AddProduct from "../../Pages/Dashboard/UserDashboard/AddProduct";
 import PrivateRoute from "./PrivateRoute";
+import MyAddedProducts from "../../Pages/Dashboard/UserDashboard/MyAddedProducts";
+import MyCart from "../../Pages/Dashboard/UserDashboard/MyCart";
 
 export const router = createBrowserRouter([
     {
@@ -47,6 +49,14 @@ export const router = createBrowserRouter([
             {
                 path: 'addProduct',
                 element: <AddProduct></AddProduct>
+            },
+            {
+                path: 'myAddedProducts',
+                element: <MyAddedProducts></MyAddedProducts>
+            },
+            {
+                path: 'myCarts',
+                element: <MyCart></MyCart>
             }
         ]
     }

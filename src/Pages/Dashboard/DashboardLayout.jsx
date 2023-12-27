@@ -42,21 +42,17 @@ const DashboardLayout = () => {
 
                                 <>
                                     <h1 className="text-center my-5 font-bold text-2xl">User Dashboard</h1>
-                                    <li className="font-bold text-white bg-blue-500 bg-opacity-20 rounded-md mx-auto">
+                                    <li className="font-bold text-white bg-gray-800 bg-opacity-40 rounded-md">
                                         <NavLink to='/dashboard/addProduct'>Add Your Product</NavLink>
                                     </li>
-                                    <li>
-                                        <NavLink to='/dashboard/createDonationCampaign'>Create Donation Campaign</NavLink>
+                                    <li className="font-bold text-white bg-gray-800 bg-opacity-40 rounded-md">
+                                        <NavLink to='/dashboard/myAddedProducts'>My Added Products</NavLink>
+                                    </li>
+                                    <li className="font-bold text-white bg-gray-800 bg-opacity-40 rounded-md">
+                                        <NavLink to='/dashboard/myCarts'>My Cart</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='/dashboard/myAddedPets'>My added pets</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/dashboard/myDonationCampaign'>My Donation Campaigns</NavLink>
-                                    </li>
-
-                                    <li>
-                                        <NavLink to='/dashboard/petAdoptor'>Adoption Request</NavLink>
+                                        <NavLink to='/dashboard/buyResponse'>Who Requested?</NavLink>
                                     </li>
                                     <li>
                                         <NavLink to='/dashboard/paymentHistory'>My Donations</NavLink>
