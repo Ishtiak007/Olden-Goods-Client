@@ -20,7 +20,7 @@ const DashboardLayout = () => {
                                 <h2 className="text-black text-center my-5 font-bold text-2xl ">Admin Dashboard</h2>
 
                                 <li>
-                                    <NavLink to='/dashboard/makeAdmin'>All Users / Make Admin</NavLink>
+                                    <NavLink to='/dashboard/manageUsers'>All Users / Make Admin</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to='/dashboard/manageAllProducts'>Manage All Products</NavLink>
