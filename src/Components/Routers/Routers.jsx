@@ -15,6 +15,7 @@ import MyCart from "../../Pages/Dashboard/UserDashboard/MyCart";
 import UpdateProduct from "../../Pages/Dashboard/UserDashboard/UpdateProduct";
 import BuyerRequest from "../../Pages/Dashboard/UserDashboard/BuyerRequest";
 import ManageUsers from "../../Pages/Dashboard/AdminDashboard/ManageUsers";
+import ManageAllProducts from "../../Pages/Dashboard/AdminDashboard/ManageAllProducts";
 
 export const router = createBrowserRouter([
     {
@@ -79,6 +80,10 @@ export const router = createBrowserRouter([
             {
                 path: 'manageUsers',
                 element: <ManageUsers></ManageUsers>
+            },
+            {
+                path: 'manageAllProducts',
+                element: <ManageAllProducts></ManageAllProducts>
             }
         ]
     }
