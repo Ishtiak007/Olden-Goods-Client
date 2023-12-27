@@ -33,10 +33,11 @@ const ProductDetails = () => {
         const buyerEmail = user?.email;
         const phoneNumber = form.phoneNumber.value;
         const buyerAddress = form.address.value;
+        const status = 'Pending'
 
 
         const buyerProduct = {
-            buyerName, buyerEmail, phoneNumber, buyerAddress, image1, name, age, date, category, price, uploaderName, uploaderPhone, uploaderLocation, email
+            buyerName, buyerEmail, phoneNumber, buyerAddress, status, image1, name, age, date, category, price, uploaderName, uploaderPhone, uploaderLocation, email
         }
         axiosSecure.post('/buyerProduct', buyerProduct)
             .then(res => {

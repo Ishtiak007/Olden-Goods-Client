@@ -3,19 +3,22 @@ import { FaBars, FaUser } from "react-icons/fa6";
 import logo from '../../assets/image/logo.png'
 import useAuth from "../../Components/Hooks/useAuth";
 import Swal from "sweetalert2";
+import { FaBell } from "react-icons/fa6";
+import useBuyerRequest from "../../Components/Hooks/useBuyerRequest";
 
 const Navbar = () => {
-    const { user, logOut } = useAuth()
+    const { user, logOut } = useAuth();
+    const [whoRequest,] = useBuyerRequest();
 
     const navLinks = <>
         <li><Link className='font-semibold text-white' to='/'>Home</Link></li>
         <li><Link className='font-semibold text-white' to='/timeline'>Timeline</Link></li>
         <li><Link className='font-semibold text-white' to='/'>Contact Us</Link></li>
-        <li><Link className='font-semibold text-white' to='/dashboard'>Dashboard</Link></li>
+        <li><Link className='font-semibold text-white' to='/dashboard/addProduct'>Dashboard</Link></li>
         <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
+        <li><Link className='font-semibold text-white' to='/dashboard/buyerRequest'><span className="flex gap-2 items-center"><FaBell className="text-xl"></FaBell> <span className="text-yellow-300"><div className="badge badge-secondary">{whoRequest.length}</div></span></span></Link></li>
 
     </>
-
     const handleLogOut = () => {
         logOut()
             .then(() => {
@@ -70,7 +73,7 @@ const Navbar = () => {
                         <div>
                             <div className='my-5 text-xs text-white'>User Email : <br />{user ? <>{user.email}</> : <span className='text-black font-bold'>You are not Logged in</span>}</div>
 
-                            <li><Link to='/dashboardPage' className='font-semibold text-gray-200 my-2 mx-auto'><button className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600  w-full'>Dashboard</button></Link></li>
+                            <li><Link to='/dashboard/addProduct' className='font-semibold text-gray-200 my-2 mx-auto'><button className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600  w-full'>Dashboard</button></Link></li>
 
                             <li><Link className='font-semibold text-gray-200 mx-auto' ><button onClick={handleLogOut} className='px-3 py-1 rounded-md bg-blue-500 hover:bg-orange-600 w-full'>Log Out</button></Link></li>
                         </div>
