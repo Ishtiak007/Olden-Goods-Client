@@ -21,7 +21,7 @@ import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 const Testimonial = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/userReview')
+        fetch('https://olden-goods-backend.vercel.app/userReview')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

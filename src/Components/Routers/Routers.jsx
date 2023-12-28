@@ -48,12 +48,12 @@ export const router = createBrowserRouter([
             {
                 path: '/productsCategory/:category',
                 element: <PrivateRoute><CategoryWiseTimeline></CategoryWiseTimeline></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/products')
+                loader: () => fetch('https://olden-goods-backend.vercel.app/products')
             },
             {
                 path: '/productDetails/:id',
                 element: <ProductDetails></ProductDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://olden-goods-backend.vercel.app/products/${params.id}`)
             }
         ]
     },
@@ -69,7 +69,7 @@ export const router = createBrowserRouter([
             {
                 path: 'updateProduct/:id',
                 element: <UpdateProduct></UpdateProduct>,
-                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://olden-goods-backend.vercel.app/products/${params.id}`)
             },
             {
                 path: 'myAddedProducts',
