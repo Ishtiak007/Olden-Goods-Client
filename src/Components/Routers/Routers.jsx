@@ -18,6 +18,7 @@ import ManageAllProducts from "../../Pages/Dashboard/AdminDashboard/ManageAllPro
 import CategoryWiseTimeline from "../../Pages/TimeLine/CategoryWiseTimeline";
 import TimeLine from "../../Pages/TimeLine/TimeLine";
 import AdminRoute from "./AdminRoute";
+import ContactUs from "../../Pages/Home/ContactUs/ContactUs";
 
 export const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
             {
                 path: '/timeline',
                 element: <PrivateRoute><TimeLine></TimeLine></PrivateRoute>
+            },
+            {
+                path: '/contactUs',
+                element: <ContactUs></ContactUs>
             },
             {
                 path: '/productsCategory/:category',

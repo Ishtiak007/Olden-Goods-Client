@@ -1,12 +1,10 @@
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// import './style.css';
 
 
 
@@ -87,7 +85,6 @@ const ProductDetails = () => {
 
 
             <div className="lg:flex my-7 gap-4">
-
                 <div className="flex-1">
                     <div className="card w-full bg-base-100 shadow-xl">
                         <div className="card-body">
@@ -95,7 +92,7 @@ const ProductDetails = () => {
                             <p className="font-medium">Age: {age} Month</p>
                             <p className="font-medium">Category: {category}</p>
                             <p className="font-medium">Post Date: {date}</p>
-                            <p className=" text-orange-700 font-bold badge badge-outline p-4">Price : {price} $</p>
+                            <p className=" text-yellow-500 font-bold badge badge-outline p-4">Price : {price} $</p>
                             <p className="text-gray-500">{longDescription}</p>
                         </div>
                         <div className="card-actions justify-center  my-4">

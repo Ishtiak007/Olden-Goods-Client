@@ -80,10 +80,10 @@ const MyAddedProducts = () => {
                                     <td>{item.age} Month</td>
                                     <td>
                                         <Link to={`/dashboard/updateProduct/${item._id}`}>
-                                            <button className="btn"><FaEdit className="text-sky-600"></FaEdit></button>
+                                            <button className="buttonProject3"><FaEdit className="text-sky-600"></FaEdit></button>
                                         </Link>
                                     </td>
-                                    <td><button onClick={() => handleDeleteProduct(item)} className="btn"><FaTrash className="text-red-600"></FaTrash></button></td>
+                                    <td><button onClick={() => handleDeleteProduct(item)} className="buttonProject3"><FaTrash className="text-red-600"></FaTrash></button></td>
                                 </tr>)
                             }
                         </tbody>
