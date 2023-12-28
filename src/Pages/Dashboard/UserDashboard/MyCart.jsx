@@ -1,7 +1,10 @@
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../Components/Hooks/useAxiosSecure";
 import useMyCart from "../../../Components/Hooks/useMyCart";
-import { FaTrash } from "react-icons/fa6";
+import { FaCheck, FaTrash } from "react-icons/fa6";
+import Marquee from "react-fast-marquee";
+import { FaShoppingCart } from "react-icons/fa";
+import { SlCallOut } from "react-icons/sl";
 
 
 const MyCart = () => {
@@ -28,7 +31,7 @@ const MyCart = () => {
                             refetch();
                             Swal.fire({
                                 title: "Deleted!",
-                                text: "Your Cart has been deleted.",
+                                text: "Your Cart has been deleted from cart.",
                                 icon: "success"
                             });
                         }
@@ -41,60 +44,67 @@ const MyCart = () => {
     }
     return (
         <div>
-            <div className="flex justify-evenly">
+            <div className="lg:flex justify-evenly">
                 <h2 className="lg:text-4xl">Your total : <span className="text-green-500">{cart.length}</span> items</h2>
                 <h2 className="lg:text-4xl">Total Order cost: <span className="text-green-500">{totalPrice}</span>$</h2>
             </div>
-            <div className="flex justify-center my-4">
-                {/* <div>
-                    {
-
-                        cart.length ? <Link to='/dashboard/payment'>
-                            <button className="px-4 py-2 bg-[#FF4860] rounded-2xl btn-outline text-white font-bold flex items-center gap-3">{`Pay ${totalPrice}$ now `}<FaCcStripe className="text-2xl"></FaCcStripe></button>
-                        </Link>
-                            :
-
-                            <button disabled className="px-4 py-2 bg-[#FF4860] rounded-2xl btn-outline text-white font-bold flex items-center gap-3">Pay now <FaCcStripe className="text-2xl"></FaCcStripe></button>
-
-                    }
-                </div> */}
+            <div className="my-5">
+                <div>
+                    <Marquee>
+                        <h1 className="flex items-center bg-orange-400 p-4 lg:font-bold text-white rounded-md gap-2"><FaShoppingCart className="text-2xl"></FaShoppingCart> Contact to Seller for payment, As soon as possible <SlCallOut className="text-2xl"></SlCallOut></h1>
+                    </Marquee>
+                </div>
             </div>
             <div className="overflow-x-auto my-8">
                 <table className="table">
                     {/* head */}
                     <thead className="bg-gray-600 text-white">
                         <tr>
-                            <th className="text-lg font-bold">
-                                Index
-                            </th>
-                            <th className="text-lg font-bold">Image</th>
-                            <th className="text-lg font-bold">Item Name</th>
-                            <th className="text-lg font-bold">Cost</th>
-                            <th>Action</th>
+                            <th>Index</th>
+                            <th>Image</th>
+                            <th>Item Name</th>
+                            <th>Seller Name</th>
+                            <th>Seller email</th>
+                            <th>Seller Phone No</th>
+                            <th>Cost</th>
+                            <th>Cancle</th>
+                            <th>Done</th>
                         </tr>
                     </thead>
                     <tbody>
                         {/* row 1 */}
                         {
                             cart.map((item, index) => <tr key={item._id}>
-                                <th className="text-base font-bold">
+                                <th className="text-base ">
                                     {index + 1}
                                 </th>
                                 <td>
                                     <div className="flex items-center gap-3">
                                         <div className="avatar">
-                                            <div className="mask mask-squircle w-16 h-16">
-                                                <img src={item.image1} alt="Avatar Tailwind CSS Component" />
+                                            <div className="mask mask-squircle w-14 h-14">
+                                                <img src={item.image1} />
                                             </div>
                                         </div>
                                     </div>
                                 </td>
-                                <td className="text-base font-bold">
+                                <td className="text-base ">
                                     {item.name}
                                 </td>
-                                <td className="text-base font-bold">{item.price} $</td>
+                                <td className="text-base ">
+                                    {item.uploaderName}
+                                </td>
+                                <td className="text-sm ">
+                                    {item.email}
+                                </td>
+                                <td className="text-base ">
+                                    {item.uploaderPhone}
+                                </td>
+                                <td className="text-base ">{item.price} $</td>
                                 <th>
-                                    <button onClick={() => handleDelete(item._id)} className="btn btn-ghost "><FaTrash className="text-xl text-red-500"></FaTrash></button>
+                                    <button onClick={() => handleDelete(item._id)} className="buttonProject3 "><FaTrash className="text-lg text-red-500"></FaTrash></button>
+                                </th>
+                                <th>
+                                    <button onClick={() => handleDelete(item._id)} className="buttonProject3 "><FaCheck className="text-lg text-green-500"></FaCheck></button>
                                 </th>
                             </tr>)
                         }

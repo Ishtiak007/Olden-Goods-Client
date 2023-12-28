@@ -10,7 +10,7 @@ const DashboardLayout = () => {
     const { user, logOut } = useAuth();
     const [whoRequest,] = useBuyerRequest();
     const [cart,] = useMyCart();
-    const isAdmin = true;
+    const isAdmin = false;
 
 
     const handleLogOut = () => {
@@ -59,9 +59,6 @@ const DashboardLayout = () => {
                                 <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
                                     <NavLink to='/dashboard/buyerRequest'>Buyer Request <span className="text-yellow-300">({whoRequest.length})</span></NavLink>
                                 </li>
-                                <li>
-                                    <NavLink to='/dashboard/paymentHistory'>Payment History</NavLink>
-                                </li>
 
                             </>
                                 :
@@ -82,14 +79,11 @@ const DashboardLayout = () => {
                                     <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
                                         <NavLink to='/dashboard/buyerRequest'>Buyer Request <span className="text-yellow-300">({whoRequest.length})</span></NavLink>
                                     </li>
-                                    <li>
-                                        <NavLink to='/dashboard/paymentHistory'>Payment History</NavLink>
-                                    </li>
                                 </>
                         }
                     </div>
                 </div>
-                <div className="flex-1 p-8">
+                <div className="flex-1 lg:p-8 bg-sky-400 bg-opacity-10">
                     <Outlet></Outlet>
                 </div>
                 <div className="lg:w-40 md:w-2/3 mx-auto min-h-screen bg-red-400">
