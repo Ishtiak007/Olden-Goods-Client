@@ -10,8 +10,6 @@ import { FaComments, FaHeadset, FaLocationArrow } from "react-icons/fa6";
 const ContactUs = () => {
     const form = useRef();
 
-
-
     const sendEmail = (e) => {
         e.preventDefault();
 

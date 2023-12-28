@@ -112,7 +112,7 @@ const DashboardLayout = () => {
                         </div>
                         <li><NavLink className='font-semibold text-white' to='/'>Home</NavLink></li>
                         <li><NavLink className='font-semibold text-white' to='/timeline'>Timeline</NavLink></li>
-                        <li><NavLink className='font-semibold text-white' to='/'>Contact Us</NavLink></li>
+                        <li><NavLink className='font-semibold text-white' to='/contactUs'>Contact Us</NavLink></li>
                         <li><NavLink className='font-semibold text-white' to='/dashboard'>Dashboard</NavLink></li>
                         <li><NavLink className='font-semibold text-white' to='/login'>Login</NavLink></li>
                     </div>
