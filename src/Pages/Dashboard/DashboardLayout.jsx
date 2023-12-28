@@ -4,13 +4,14 @@ import { FaUser } from "react-icons/fa6";
 import useBuyerRequest from "../../Components/Hooks/useBuyerRequest";
 import useMyCart from "../../Components/Hooks/useMyCart";
 import Swal from "sweetalert2";
+import useAdmin from "../../Components/Hooks/useAdmin";
 
 
 const DashboardLayout = () => {
     const { user, logOut } = useAuth();
     const [whoRequest,] = useBuyerRequest();
     const [cart,] = useMyCart();
-    const isAdmin = false;
+    const [isAdmin] = useAdmin();
 
 
     const handleLogOut = () => {

@@ -17,6 +17,7 @@ import ManageUsers from "../../Pages/Dashboard/AdminDashboard/ManageUsers";
 import ManageAllProducts from "../../Pages/Dashboard/AdminDashboard/ManageAllProducts";
 import CategoryWiseTimeline from "../../Pages/TimeLine/CategoryWiseTimeline";
 import TimeLine from "../../Pages/TimeLine/TimeLine";
+import AdminRoute from "./AdminRoute";
 
 export const router = createBrowserRouter([
     {
@@ -37,11 +38,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/timeline',
-                element: <TimeLine></TimeLine>
+                element: <PrivateRoute><TimeLine></TimeLine></PrivateRoute>
             },
             {
                 path: '/productsCategory/:category',
-                element: <CategoryWiseTimeline></CategoryWiseTimeline>,
+                element: <PrivateRoute><CategoryWiseTimeline></CategoryWiseTimeline></PrivateRoute>,
                 loader: () => fetch('http://localhost:5000/products')
             },
             {
@@ -86,11 +87,11 @@ export const router = createBrowserRouter([
             // ADMIN dashboard
             {
                 path: 'manageUsers',
-                element: <ManageUsers></ManageUsers>
+                element: <AdminRoute><ManageUsers></ManageUsers></AdminRoute>
             },
             {
                 path: 'manageAllProducts',
-                element: <ManageAllProducts></ManageAllProducts>
+                element: <AdminRoute><ManageAllProducts></ManageAllProducts></AdminRoute>
             }
         ]
     }
