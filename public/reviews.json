@@ -1,27 +1,32 @@
 [
     {
-        "name": "Jane Doe",
-        "details": "A dining experience that exceeds expectations. Every bite was a journey of culinary delight.",
+        "name": "Minhaz Rabid",
+        "details": "Safe transactions, vast product selection, quick delivery, reputable selling platform.",
         "rating": 3
     },
     {
-        "name": "John Doe",
-        "details": "Impeccable service, diverse menu, and the perfect ambiance. A must-visit for food enthusiasts!",
+        "name": "Emran",
+        "details": "User-friendly platform, trustworthy sellers, excellent customer service, reliable product quality.",
         "rating": 2
     },
     {
-        "name": "MJ Doe",
-        "details": "Exceptional attention to detail in every dish. The flavors are an orchestra for the taste buds.",
+        "name": "Ashadur",
+        "details": "Secure transactions, diverse product range, responsive customer support, reputable buying.",
         "rating": 5
     },
     {
-        "name": "Sarah Smith",
-        "details": " A symphony of tastes that redefine fine dining. Each dish tells a story of culinary mastery.",
+        "name": "Sumon",
+        "details": "Effortless buying experience, reliable sellers, secure payments, diverse product options.",
         "rating": 4
     },
     {
-        "name": "Robert Johnson",
-        "details": "A gastronomic haven where every flavor is a revelation. A culinary voyage worth savoring.",
+        "name": "Milon",
+        "details": "Transparent transactions, reliable sellers, excellent product quality, trusted online marketplace.",
         "rating": 5
+    },
+    {
+        "name": "Hiru",
+        "details": "A gastronomic haven where every flavor is a revelation. A culinary voyage worth savoring.",
+        "rating": 3
     }
 ]

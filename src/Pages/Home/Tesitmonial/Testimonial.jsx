@@ -42,14 +42,14 @@ const Testimonial = () => {
                 className="mySwiper">
                 {
                     reviews.map(review => <SwiperSlide key={review._id}>
-                        <div className="lg:my-16 lg:mx-24 flex flex-col items-center lg:max-w-2xl p-3 shadow-xl rounded-2xl">
+                        <div className="lg:my-16 lg:mx-24 flex flex-col items-center lg:max-w-2xl p-3 shadow-xl bg-gray-400 bg-opacity-10 rounded-2xl">
 
-                            <h3 className="lg:text-2xl text-orange-400 flex items-center gap-2 my-3">{review.name}
+                            <h3 className="lg:text-2xl font-bold flex items-center gap-2 my-3">{review.name}
                                 <p><FaQuoteRight className="text-5xl mx-auto text-gray-200"></FaQuoteRight></p></h3>
 
                             <div className="avatar">
                                 <div className="w-24 rounded-full">
-                                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    <img src="https://i.ibb.co/8sDBq9w/avatar-3637425-1280.png" />
                                 </div>
                             </div>
                             <Rating

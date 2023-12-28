@@ -5,9 +5,15 @@ import Category from "../Category/Category";
 import CategoryOverview from "../CategoryOverview/CategoryOverview";
 import RegisterLink from "../RegisterLink/RegisterLink";
 import Testimonial from "../Tesitmonial/Testimonial";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 const Home = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return (
         <div>
             <Helmet>
@@ -15,12 +21,30 @@ const Home = () => {
                     Olden Goods | Home
                 </title>
             </Helmet>
-            <Banner></Banner>
-            <AfterBanner></AfterBanner>
-            <Category></Category>
-            <CategoryOverview></CategoryOverview>
-            <RegisterLink></RegisterLink>
-            <Testimonial></Testimonial>
+
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <Banner></Banner>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <AfterBanner></AfterBanner>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <Category></Category>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <CategoryOverview></CategoryOverview>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <RegisterLink></RegisterLink>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <Testimonial></Testimonial>
+            </div>
         </div>
     );
 };
