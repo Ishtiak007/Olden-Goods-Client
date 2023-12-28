@@ -3,7 +3,6 @@ import {
 } from "react-router-dom";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../../Pages/Home/Home/Home";
-import TimeLine from "../../Pages/TimeLine/TimeLine";
 import ProductDetails from "../../Pages/TimeLine/ProductDetails";
 import Login from "../../Pages/LoginPage/Login";
 import Register from "../../Pages/RegisterPage/Register";
@@ -16,6 +15,8 @@ import UpdateProduct from "../../Pages/Dashboard/UserDashboard/UpdateProduct";
 import BuyerRequest from "../../Pages/Dashboard/UserDashboard/BuyerRequest";
 import ManageUsers from "../../Pages/Dashboard/AdminDashboard/ManageUsers";
 import ManageAllProducts from "../../Pages/Dashboard/AdminDashboard/ManageAllProducts";
+import CategoryWiseTimeline from "../../Pages/TimeLine/CategoryWiseTimeline";
+import TimeLine from "../../Pages/TimeLine/TimeLine";
 
 export const router = createBrowserRouter([
     {
@@ -37,6 +38,11 @@ export const router = createBrowserRouter([
             {
                 path: '/timeline',
                 element: <TimeLine></TimeLine>
+            },
+            {
+                path: '/productsCategory/:category',
+                element: <CategoryWiseTimeline></CategoryWiseTimeline>,
+                loader: () => fetch('http://localhost:5000/products')
             },
             {
                 path: '/productDetails/:id',

@@ -9,7 +9,7 @@ const Category = () => {
         fetch('http://localhost:5000/category')
             .then(res => res.json())
             .then(data => setCategory(data))
-    }, [])
+    }, []);
     return (
         <div>
             <SectionTitle heading={'Products category'} subHeading={'Select Your Goods: Explore Tailored Choices by Category Now!'}></SectionTitle>

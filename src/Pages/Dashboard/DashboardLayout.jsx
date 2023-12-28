@@ -43,14 +43,15 @@ const DashboardLayout = () => {
                             isAdmin ? <>
                                 <h2 className="text-black text-center my-5 font-bold text-2xl ">Admin Dashboard</h2>
 
+
+                                <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
+                                    <NavLink to='/dashboard/addProduct'>Add Your Product (Admin)</NavLink>
+                                </li>
                                 <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
                                     <NavLink to='/dashboard/manageUsers'>All Users / Make Admin</NavLink>
                                 </li>
                                 <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
                                     <NavLink to='/dashboard/manageAllProducts'>Manage All Products</NavLink>
-                                </li>
-                                <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
-                                    <NavLink to='/dashboard/addProduct'>Add Your Product (Admin)</NavLink>
                                 </li>
                                 <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
                                     <NavLink to='/dashboard/myAddedProducts'>Admin Added Products</NavLink>
@@ -67,11 +68,13 @@ const DashboardLayout = () => {
 
                                 <>
                                     <h1 className="text-center my-5 font-bold text-2xl">User Dashboard</h1>
-                                    <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
-                                        <NavLink to='/dashboard/myCarts'>My Cart <span className="text-green-300">({cart.length})</span></NavLink>
-                                    </li>
+
+
                                     <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
                                         <NavLink to='/dashboard/addProduct'>Add Your Product</NavLink>
+                                    </li>
+                                    <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
+                                        <NavLink to='/dashboard/myCarts'>My Cart <span className="text-green-300">({cart.length})</span></NavLink>
                                     </li>
                                     <li className="font-bold text-white bg-gray-800 bg-opacity-20 rounded-md">
                                         <NavLink to='/dashboard/myAddedProducts'>My Added Products</NavLink>
