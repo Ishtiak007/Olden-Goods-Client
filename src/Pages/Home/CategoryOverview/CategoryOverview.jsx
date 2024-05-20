@@ -1,104 +1,498 @@
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
-import './style.css';
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "blue" }}
+            onClick={onClick}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "blue" }}
+            onClick={onClick}
+        />
+    );
+}
 
 
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-const CategoryOverview = () => (
-    <div className='my-5'>
-        <div className="relative overflow-hidden rounded-b-md  h-[450px] lg:h-[550px] bg-cover">
-            <div className="absolute bottom-0 left-0 right-0 top-0  overflow-hidden bg-fixed bg-[#3a3a3aaa]">
-
-                <div className="h-full flex justify-center items-center">
-                    <Swiper
-                        spaceBetween={30}
-                        centeredSlides={true}
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        navigation={true}
-                        modules={[Autoplay, Pagination, Navigation]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/G33QMMK/kenny-eliason-i-Aftd-Icgp-Fc-unsplash.jpg" alt="" />
+// import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+const CategoryOverview = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        focusOnSelect: true,
+        prevArrow: <SamplePrevArrow />,
+        nextArrow: <SampleNextArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+    return (
+        <div className="slider-container mt-6 px-4 lg:px-0">
+            <Slider {...settings}>
+                {/* 1 */}
+                <div className=" bg-gray-50 overflow-hidden rounded-lg">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center  w-full h-56"
+                            src="https://i.ibb.co/G33QMMK/kenny-eliason-i-Aftd-Icgp-Fc-unsplash.jpg"
+                            alt="image"
+                        />
+                        <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
+                            <div>
+                                <img src="/icon/gallery.png" alt="" />
                             </div>
-                        </SwiperSlide>
+                            <p className="text-sm md:text-base">2</p>
+                        </button>
+                    </div>
 
-
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/yRfcpDn/alienware-Bp3-Km-TZQlfw-unsplash.jpg" alt="" />
+                    <div className=" relative px-6 py-4">
+                        <div className=" flex gap-2 justify-between pb-3">
+                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img src="/icon/rectangle.png" alt="" />
+                                </span>
+                                <p className="text-sm md:text-base font-semibold">
+                                    Ready to Move
+                                </p>
                             </div>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/bPgHzqb/daria-nepriakhina-x-Y55b-L5m-ZAM-unsplash.jpg" alt="" />
+                        </div>
+                        <hr className="border" />
+                        <div className="space-y-1 md:space-y-3">
+                            <p className="text-xl font-semibold pt-2">
+                                Sunny Slope Suites
+                            </p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img
+                                        className="w-3 md:w-4"
+                                        src="/icon/location.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <p className="text-sm md:text-base text-gray-500">
+                                    Meadowshire Park, Greenfield, USA
+                                </p>
                             </div>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/417YNB8/manu-b-Tlk-Jdq-H6m-UQ-unsplash.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/sJhPPc6/david-lezcano-Nf-Zi-OJz-Zgcg-unsplash.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/BqsKfgn/jamie-street-a-Muq-Xz7-R-M-unsplash.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/KrBVDgx/alessandro-bogliari-o-Ds-Axe-R5g4-unsplash.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/f22qQ07/jerry-wang-LXIH6-QHz6ko-unsplash.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-
-
-                        <SwiperSlide>
-                            <div className=" p-3">
-                                <img className="rounded-lg w-full" src="https://i.ibb.co/BP7MczL/img3.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
+                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
+                                $ 250000
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                {/* 2 */}
+                <div className=" bg-gray-50 overflow-hidden rounded-lg">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center  w-full h-56"
+                            src="https://i.ibb.co/bPgHzqb/daria-nepriakhina-x-Y55b-L5m-ZAM-unsplash.jpg"
+                            alt="image"
+                        />
+                        <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
+                            <div>
+                                <img src="/icon/gallery.png" alt="" />
+                            </div>
+                            <p className="text-sm md:text-base">3</p>
+                        </button>
+                    </div>
+
+                    <div className=" relative px-6 py-4">
+                        <div className=" flex gap-2 justify-between pb-3">
+                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img src="/icon/rectangle.png" alt="" />
+                                </span>
+                                <p className="text-sm md:text-base font-semibold">
+                                    Ready to Move
+                                </p>
+                            </div>
+                        </div>
+                        <hr className="border" />
+                        <div className="space-y-1 md:space-y-3">
+                            <p className="text-xl font-semibold pt-2">
+                                Sunny Slope Suites
+                            </p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img
+                                        className="w-3 md:w-4"
+                                        src="/icon/location.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <p className="text-sm md:text-base text-gray-500">
+                                    Meadowshire Park, Greenfield, USA
+                                </p>
+                            </div>
+                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
+                                $ 250000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {/* 3 */}
+                <div className=" bg-gray-50 overflow-hidden rounded-lg">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center  w-full h-56"
+                            src="https://i.ibb.co/417YNB8/manu-b-Tlk-Jdq-H6m-UQ-unsplash.jpg"
+                            alt="image"
+                        />
+                        <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
+                            <div>
+                                <img src="/icon/gallery.png" alt="" />
+                            </div>
+                            <p className="text-sm md:text-base">4</p>
+                        </button>
+                    </div>
+
+                    <div className=" relative px-6 py-4">
+                        <div className=" flex gap-2 justify-between pb-3">
+                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img src="/icon/rectangle.png" alt="" />
+                                </span>
+                                <p className="text-sm md:text-base font-semibold">
+                                    Ready to Move
+                                </p>
+                            </div>
+                        </div>
+                        <hr className="border" />
+                        <div className="space-y-1 md:space-y-3">
+                            <p className="text-xl font-semibold pt-2">
+                                Sunny Slope Suites
+                            </p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img
+                                        className="w-3 md:w-4"
+                                        src="/icon/location.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <p className="text-sm md:text-base text-gray-500">
+                                    Meadowshire Park, Greenfield, USA
+                                </p>
+                            </div>
+                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
+                                $ 250000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* 4 */}
+                <div className=" bg-gray-50 overflow-hidden rounded-lg">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center  w-full h-56"
+                            src="https://i.ibb.co/sJhPPc6/david-lezcano-Nf-Zi-OJz-Zgcg-unsplash.jpg"
+                            alt="image"
+                        />
+                        <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
+                            <div>
+                                <img src="/icon/gallery.png" alt="" />
+                            </div>
+                            <p className="text-sm md:text-base">5</p>
+                        </button>
+                    </div>
+
+                    <div className=" relative px-6 py-4">
+                        <div className=" flex gap-2 justify-between pb-3">
+                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img src="/icon/rectangle.png" alt="" />
+                                </span>
+                                <p className="text-sm md:text-base font-semibold">
+                                    Ready to Move
+                                </p>
+                            </div>
+                        </div>
+                        <hr className="border" />
+                        <div className="space-y-1 md:space-y-3">
+                            <p className="text-xl font-semibold pt-2">
+                                Sunny Slope Suites
+                            </p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img
+                                        className="w-3 md:w-4"
+                                        src="/icon/location.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <p className="text-sm md:text-base text-gray-500">
+                                    Meadowshire Park, Greenfield, USA
+                                </p>
+                            </div>
+                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
+                                $ 250000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 5 */}
+                <div className=" bg-gray-50 overflow-hidden rounded-lg">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center  w-full h-56"
+                            src="https://i.ibb.co/BqsKfgn/jamie-street-a-Muq-Xz7-R-M-unsplash.jpg"
+                            alt="image"
+                        />
+                        <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
+                            <div>
+                                <img src="/icon/gallery.png" alt="" />
+                            </div>
+                            <p className="text-sm md:text-base">6</p>
+                        </button>
+                    </div>
+
+                    <div className=" relative px-6 py-4">
+                        <div className=" flex gap-2 justify-between pb-3">
+                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img src="/icon/rectangle.png" alt="" />
+                                </span>
+                                <p className="text-sm md:text-base font-semibold">
+                                    Ready to Move
+                                </p>
+                            </div>
+                        </div>
+                        <hr className="border" />
+                        <div className="space-y-1 md:space-y-3">
+                            <p className="text-xl font-semibold pt-2">
+                                Sunny Slope Suites
+                            </p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img
+                                        className="w-3 md:w-4"
+                                        src="/icon/location.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <p className="text-sm md:text-base text-gray-500">
+                                    Meadowshire Park, Greenfield, USA
+                                </p>
+                            </div>
+                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
+                                $ 250000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 6 */}
+                <div className=" bg-gray-50 overflow-hidden rounded-lg">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center  w-full h-56"
+                            src="https://i.ibb.co/KrBVDgx/alessandro-bogliari-o-Ds-Axe-R5g4-unsplash.jpg"
+                            alt="image"
+                        />
+                        <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
+                            <div>
+                                <img src="/icon/gallery.png" alt="" />
+                            </div>
+                            <p className="text-sm md:text-base">7</p>
+                        </button>
+                    </div>
+
+                    <div className=" relative px-6 py-4">
+                        <div className=" flex gap-2 justify-between pb-3">
+                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img src="/icon/rectangle.png" alt="" />
+                                </span>
+                                <p className="text-sm md:text-base font-semibold">
+                                    Ready to Move
+                                </p>
+                            </div>
+                        </div>
+                        <hr className="border" />
+                        <div className="space-y-1 md:space-y-3">
+                            <p className="text-xl font-semibold pt-2">
+                                Sunny Slope Suites
+                            </p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img
+                                        className="w-3 md:w-4"
+                                        src="/icon/location.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <p className="text-sm md:text-base text-gray-500">
+                                    Meadowshire Park, Greenfield, USA
+                                </p>
+                            </div>
+                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
+                                $ 250000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* 7 */}
+                <div className=" bg-gray-50 overflow-hidden rounded-lg">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center  w-full h-56"
+                            src="https://i.ibb.co/f22qQ07/jerry-wang-LXIH6-QHz6ko-unsplash.jpg"
+                            alt="image"
+                        />
+                        <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
+                            <div>
+                                <img src="/icon/gallery.png" alt="" />
+                            </div>
+                            <p className="text-sm md:text-base">8</p>
+                        </button>
+                    </div>
+
+                    <div className=" relative px-6 py-4">
+                        <div className=" flex gap-2 justify-between pb-3">
+                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img src="/icon/rectangle.png" alt="" />
+                                </span>
+                                <p className="text-sm md:text-base font-semibold">
+                                    Ready to Move
+                                </p>
+                            </div>
+                        </div>
+                        <hr className="border" />
+                        <div className="space-y-1 md:space-y-3">
+                            <p className="text-xl font-semibold pt-2">
+                                Sunny Slope Suites
+                            </p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img
+                                        className="w-3 md:w-4"
+                                        src="/icon/location.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <p className="text-sm md:text-base text-gray-500">
+                                    Meadowshire Park, Greenfield, USA
+                                </p>
+                            </div>
+                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
+                                $ 250000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* 8 */}
+                <div className=" bg-gray-50 overflow-hidden rounded-lg">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center  w-full h-56"
+                            src="https://i.ibb.co/BP7MczL/img3.jpg"
+                            alt="image"
+                        />
+                        <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
+                            <div>
+                                <img src="/icon/gallery.png" alt="" />
+                            </div>
+                            <p className="text-sm md:text-base">9</p>
+                        </button>
+                    </div>
+
+                    <div className=" relative px-6 py-4">
+                        <div className=" flex gap-2 justify-between pb-3">
+                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img src="/icon/rectangle.png" alt="" />
+                                </span>
+                                <p className="text-sm md:text-base font-semibold">
+                                    Ready to Move
+                                </p>
+                            </div>
+                        </div>
+                        <hr className="border" />
+                        <div className="space-y-1 md:space-y-3">
+                            <p className="text-xl font-semibold pt-2">
+                                Sunny Slope Suites
+                            </p>
+                            <div className=" flex gap-2 items-center">
+                                <span>
+                                    <img
+                                        className="w-3 md:w-4"
+                                        src="/icon/location.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <p className="text-sm md:text-base text-gray-500">
+                                    Meadowshire Park, Greenfield, USA
+                                </p>
+                            </div>
+                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
+                                $ 250000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </Slider>
         </div>
-    </div>
-);
+    );
+};
 
 export default CategoryOverview;
