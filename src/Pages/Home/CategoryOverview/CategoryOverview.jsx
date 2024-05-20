@@ -26,10 +26,6 @@ function SamplePrevArrow(props) {
     );
 }
 
-
-
-// import required modules
-// import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const CategoryOverview = () => {
     var settings = {
         dots: true,
@@ -92,14 +88,11 @@ const CategoryOverview = () => {
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">HOME AND LIVING</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
                                 </span>
-                                <p className="text-sm md:text-base font-semibold">
-                                    Ready to Move
-                                </p>
                             </div>
                         </div>
                         <hr className="border" />
@@ -148,9 +141,6 @@ const CategoryOverview = () => {
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
                                 </span>
-                                <p className="text-sm md:text-base font-semibold">
-                                    Ready to Move
-                                </p>
                             </div>
                         </div>
                         <hr className="border" />
@@ -199,9 +189,6 @@ const CategoryOverview = () => {
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
                                 </span>
-                                <p className="text-sm md:text-base font-semibold">
-                                    Ready to Move
-                                </p>
                             </div>
                         </div>
                         <hr className="border" />
@@ -252,9 +239,6 @@ const CategoryOverview = () => {
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
                                 </span>
-                                <p className="text-sm md:text-base font-semibold">
-                                    Ready to Move
-                                </p>
                             </div>
                         </div>
                         <hr className="border" />
@@ -304,9 +288,6 @@ const CategoryOverview = () => {
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
                                 </span>
-                                <p className="text-sm md:text-base font-semibold">
-                                    Ready to Move
-                                </p>
                             </div>
                         </div>
                         <hr className="border" />
@@ -351,14 +332,11 @@ const CategoryOverview = () => {
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">HOBBIES-SPORTS</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
                                 </span>
-                                <p className="text-sm md:text-base font-semibold">
-                                    Ready to Move
-                                </p>
                             </div>
                         </div>
                         <hr className="border" />
@@ -404,14 +382,11 @@ const CategoryOverview = () => {
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">KIDS</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
                                 </span>
-                                <p className="text-sm md:text-base font-semibold">
-                                    Ready to Move
-                                </p>
                             </div>
                         </div>
                         <hr className="border" />
@@ -457,14 +432,11 @@ const CategoryOverview = () => {
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">EDUCATION PETS AND ANIMAL</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
                                 </span>
-                                <p className="text-sm md:text-base font-semibold">
-                                    Ready to Move
-                                </p>
                             </div>
                         </div>
                         <hr className="border" />
