@@ -6,7 +6,7 @@ import CategoryCard from "./CategoryCard";
 const Category = () => {
     const [category, setCategory] = useState([]);
     useEffect(() => {
-        fetch('https://olden-goods-backend.vercel.app/category')
+        fetch('http://localhost:5000/category')
             .then(res => res.json())
             .then(data => setCategory(data))
     }, []);
