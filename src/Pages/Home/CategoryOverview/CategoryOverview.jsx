@@ -2,6 +2,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 
 function SampleNextArrow(props) {
@@ -68,7 +69,7 @@ const CategoryOverview = () => {
         ],
     };
     return (
-        <div className="slider-container mt-6 px-4 lg:px-0">
+        <div className="slider-container my-8 px-4 lg:px-0">
             <Slider {...settings}>
                 {/* 1 */}
                 <div className=" bg-gray-50 overflow-hidden rounded-lg">
@@ -97,6 +98,7 @@ const CategoryOverview = () => {
                                 <p className="text-sm md:text-base text-gray-500">
                                     More than 5 kinds of products are available
                                 </p>
+                                <Link to='/timeline' className="buttonProject4">Timeline</Link>
                             </div>
                         </div>
                     </div>
@@ -130,6 +132,7 @@ const CategoryOverview = () => {
                                 <p className="text-sm md:text-base text-gray-500">
                                     More than 3 kinds of products are available
                                 </p>
+                                <Link to='/timeline' className="buttonProject4">Timeline</Link>
                             </div>
                         </div>
                     </div>
@@ -163,6 +166,7 @@ const CategoryOverview = () => {
                                 <p className="text-sm md:text-base text-gray-500">
                                     More than 6 kinds of products are available
                                 </p>
+                                <Link to='/timeline' className="buttonProject4">Timeline</Link>
                             </div>
                         </div>
                     </div>
@@ -198,6 +202,7 @@ const CategoryOverview = () => {
                                 <p className="text-sm md:text-base text-gray-500">
                                     More than 8 kinds of products are available
                                 </p>
+                                <Link to='/timeline' className="buttonProject4">Timeline</Link>
                             </div>
                         </div>
                     </div>
@@ -232,6 +237,7 @@ const CategoryOverview = () => {
                                 <p className="text-sm md:text-base text-gray-500">
                                     More than 3 kinds of products are available
                                 </p>
+                                <Link to='/timeline' className="buttonProject4">Timeline</Link>
                             </div>
                         </div>
                     </div>
@@ -266,6 +272,7 @@ const CategoryOverview = () => {
                                 <p className="text-sm md:text-base text-gray-500">
                                     More than 9 kinds of products are available
                                 </p>
+                                <Link to='/timeline' className="buttonProject4">Timeline</Link>
                             </div>
                         </div>
                     </div>
@@ -301,6 +308,7 @@ const CategoryOverview = () => {
                                 <p className="text-sm md:text-base text-gray-500">
                                     More than 8 kinds of products are available
                                 </p>
+                                <Link to='/timeline' className="buttonProject4">Timeline</Link>
                             </div>
                         </div>
                     </div>
@@ -336,6 +344,7 @@ const CategoryOverview = () => {
                                 <p className="text-sm md:text-base text-gray-500">
                                     More than 4 kinds of products are available
                                 </p>
+                                <Link to='/timeline' className="buttonProject4">Timeline</Link>
                             </div>
                         </div>
                     </div>
