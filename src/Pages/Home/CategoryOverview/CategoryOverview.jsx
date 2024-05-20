@@ -82,7 +82,7 @@ const CategoryOverview = () => {
                             <div>
                                 <img src="/icon/gallery.png" alt="" />
                             </div>
-                            <p className="text-sm md:text-base">2</p>
+                            <p className="text-sm md:text-base">1</p>
                         </button>
                     </div>
 
@@ -112,9 +112,6 @@ const CategoryOverview = () => {
                                     Meadowshire Park, Greenfield, USA
                                 </p>
                             </div>
-                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
-                                $ 250000
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -130,13 +127,13 @@ const CategoryOverview = () => {
                             <div>
                                 <img src="/icon/gallery.png" alt="" />
                             </div>
-                            <p className="text-sm md:text-base">3</p>
+                            <p className="text-sm md:text-base">2</p>
                         </button>
                     </div>
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">EDUCATION</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
@@ -160,9 +157,6 @@ const CategoryOverview = () => {
                                     Meadowshire Park, Greenfield, USA
                                 </p>
                             </div>
-                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
-                                $ 250000
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -178,13 +172,13 @@ const CategoryOverview = () => {
                             <div>
                                 <img src="/icon/gallery.png" alt="" />
                             </div>
-                            <p className="text-sm md:text-base">4</p>
+                            <p className="text-sm md:text-base">3</p>
                         </button>
                     </div>
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">VEHICLES</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
@@ -208,9 +202,6 @@ const CategoryOverview = () => {
                                     Meadowshire Park, Greenfield, USA
                                 </p>
                             </div>
-                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
-                                $ 250000
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -228,13 +219,13 @@ const CategoryOverview = () => {
                             <div>
                                 <img src="/icon/gallery.png" alt="" />
                             </div>
-                            <p className="text-sm md:text-base">5</p>
+                            <p className="text-sm md:text-base">4</p>
                         </button>
                     </div>
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">MENS FASHION & GROOMING</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
@@ -258,9 +249,6 @@ const CategoryOverview = () => {
                                     Meadowshire Park, Greenfield, USA
                                 </p>
                             </div>
-                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
-                                $ 250000
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -277,13 +265,13 @@ const CategoryOverview = () => {
                             <div>
                                 <img src="/icon/gallery.png" alt="" />
                             </div>
-                            <p className="text-sm md:text-base">6</p>
+                            <p className="text-sm md:text-base">5</p>
                         </button>
                     </div>
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">Apartment</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">WOMENS FASHION & BEAUTY</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
@@ -307,9 +295,6 @@ const CategoryOverview = () => {
                                     Meadowshire Park, Greenfield, USA
                                 </p>
                             </div>
-                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
-                                $ 250000
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -326,7 +311,7 @@ const CategoryOverview = () => {
                             <div>
                                 <img src="/icon/gallery.png" alt="" />
                             </div>
-                            <p className="text-sm md:text-base">7</p>
+                            <p className="text-sm md:text-base">6</p>
                         </button>
                     </div>
 
@@ -356,9 +341,6 @@ const CategoryOverview = () => {
                                     Meadowshire Park, Greenfield, USA
                                 </p>
                             </div>
-                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
-                                $ 250000
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -376,7 +358,7 @@ const CategoryOverview = () => {
                             <div>
                                 <img src="/icon/gallery.png" alt="" />
                             </div>
-                            <p className="text-sm md:text-base">8</p>
+                            <p className="text-sm md:text-base">7</p>
                         </button>
                     </div>
 
@@ -406,9 +388,6 @@ const CategoryOverview = () => {
                                     Meadowshire Park, Greenfield, USA
                                 </p>
                             </div>
-                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
-                                $ 250000
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -426,13 +405,13 @@ const CategoryOverview = () => {
                             <div>
                                 <img src="/icon/gallery.png" alt="" />
                             </div>
-                            <p className="text-sm md:text-base">9</p>
+                            <p className="text-sm md:text-base">8</p>
                         </button>
                     </div>
 
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
-                            <p className="bg-blue-100 px-2 py-1 text-sm">EDUCATION PETS AND ANIMAL</p>
+                            <p className="bg-blue-100 px-2 py-1 text-sm">PETS AND ANIMAL</p>
                             <div className=" flex gap-2 items-center">
                                 <span>
                                     <img src="/icon/rectangle.png" alt="" />
@@ -456,9 +435,6 @@ const CategoryOverview = () => {
                                     Meadowshire Park, Greenfield, USA
                                 </p>
                             </div>
-                            <p className=" text-lg  md:text-xl lg:text-2xl font-bold">
-                                $ 250000
-                            </p>
                         </div>
                     </div>
                 </div>
