@@ -79,9 +79,6 @@ const CategoryOverview = () => {
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
-                            <div>
-                                <img src="/icon/gallery.png" alt="" />
-                            </div>
                             <p className="text-sm md:text-base">1</p>
                         </button>
                     </div>
@@ -89,27 +86,16 @@ const CategoryOverview = () => {
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
                             <p className="bg-blue-100 px-2 py-1 text-sm">HOME AND LIVING</p>
-                            <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img src="/icon/rectangle.png" alt="" />
-                                </span>
-                            </div>
                         </div>
                         <hr className="border" />
                         <div className="space-y-1 md:space-y-3">
-                            <p className="text-xl font-semibold pt-2">
-                                Sunny Slope Suites
+                            <p className="text-lg font-semibold pt-2">
+                                HOME AND LIVING category related essentials can be found here
                             </p>
                             <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img
-                                        className="w-3 md:w-4"
-                                        src="/icon/location.png"
-                                        alt=""
-                                    />
-                                </span>
+
                                 <p className="text-sm md:text-base text-gray-500">
-                                    Meadowshire Park, Greenfield, USA
+                                    More than 5 kinds of products are available
                                 </p>
                             </div>
                         </div>
@@ -124,9 +110,7 @@ const CategoryOverview = () => {
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
-                            <div>
-                                <img src="/icon/gallery.png" alt="" />
-                            </div>
+
                             <p className="text-sm md:text-base">2</p>
                         </button>
                     </div>
@@ -134,27 +118,17 @@ const CategoryOverview = () => {
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
                             <p className="bg-blue-100 px-2 py-1 text-sm">EDUCATION</p>
-                            <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img src="/icon/rectangle.png" alt="" />
-                                </span>
-                            </div>
+
                         </div>
                         <hr className="border" />
                         <div className="space-y-1 md:space-y-3">
-                            <p className="text-xl font-semibold pt-2">
-                                Sunny Slope Suites
+                            <p className="text-lg font-semibold pt-2">
+                                EDUCATION category related essentials can be found here
                             </p>
                             <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img
-                                        className="w-3 md:w-4"
-                                        src="/icon/location.png"
-                                        alt=""
-                                    />
-                                </span>
+
                                 <p className="text-sm md:text-base text-gray-500">
-                                    Meadowshire Park, Greenfield, USA
+                                    More than 3 kinds of products are available
                                 </p>
                             </div>
                         </div>
@@ -169,9 +143,7 @@ const CategoryOverview = () => {
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
-                            <div>
-                                <img src="/icon/gallery.png" alt="" />
-                            </div>
+
                             <p className="text-sm md:text-base">3</p>
                         </button>
                     </div>
@@ -179,27 +151,17 @@ const CategoryOverview = () => {
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
                             <p className="bg-blue-100 px-2 py-1 text-sm">VEHICLES</p>
-                            <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img src="/icon/rectangle.png" alt="" />
-                                </span>
-                            </div>
+
                         </div>
                         <hr className="border" />
                         <div className="space-y-1 md:space-y-3">
-                            <p className="text-xl font-semibold pt-2">
-                                Sunny Slope Suites
+                            <p className="text-lg font-semibold pt-2">
+                                VEHICLES category related essentials can be found here
                             </p>
                             <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img
-                                        className="w-3 md:w-4"
-                                        src="/icon/location.png"
-                                        alt=""
-                                    />
-                                </span>
+
                                 <p className="text-sm md:text-base text-gray-500">
-                                    Meadowshire Park, Greenfield, USA
+                                    More than 6 kinds of products are available
                                 </p>
                             </div>
                         </div>
@@ -216,9 +178,7 @@ const CategoryOverview = () => {
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
-                            <div>
-                                <img src="/icon/gallery.png" alt="" />
-                            </div>
+
                             <p className="text-sm md:text-base">4</p>
                         </button>
                     </div>
@@ -226,27 +186,17 @@ const CategoryOverview = () => {
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
                             <p className="bg-blue-100 px-2 py-1 text-sm">MENS FASHION & GROOMING</p>
-                            <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img src="/icon/rectangle.png" alt="" />
-                                </span>
-                            </div>
+
                         </div>
                         <hr className="border" />
                         <div className="space-y-1 md:space-y-3">
-                            <p className="text-xl font-semibold pt-2">
-                                Sunny Slope Suites
+                            <p className="text-lg font-semibold pt-2">
+                                MENS FASHION & GROOMING category related essentials can be found here
                             </p>
                             <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img
-                                        className="w-3 md:w-4"
-                                        src="/icon/location.png"
-                                        alt=""
-                                    />
-                                </span>
+
                                 <p className="text-sm md:text-base text-gray-500">
-                                    Meadowshire Park, Greenfield, USA
+                                    More than 8 kinds of products are available
                                 </p>
                             </div>
                         </div>
@@ -262,9 +212,7 @@ const CategoryOverview = () => {
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
-                            <div>
-                                <img src="/icon/gallery.png" alt="" />
-                            </div>
+
                             <p className="text-sm md:text-base">5</p>
                         </button>
                     </div>
@@ -272,27 +220,17 @@ const CategoryOverview = () => {
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
                             <p className="bg-blue-100 px-2 py-1 text-sm">WOMENS FASHION & BEAUTY</p>
-                            <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img src="/icon/rectangle.png" alt="" />
-                                </span>
-                            </div>
+
                         </div>
                         <hr className="border" />
                         <div className="space-y-1 md:space-y-3">
-                            <p className="text-xl font-semibold pt-2">
-                                Sunny Slope Suites
+                            <p className="text-lg font-semibold pt-2">
+                                WOMENS FASHION & BEAUTY category related essentials can be found here
                             </p>
                             <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img
-                                        className="w-3 md:w-4"
-                                        src="/icon/location.png"
-                                        alt=""
-                                    />
-                                </span>
+
                                 <p className="text-sm md:text-base text-gray-500">
-                                    Meadowshire Park, Greenfield, USA
+                                    More than 3 kinds of products are available
                                 </p>
                             </div>
                         </div>
@@ -308,9 +246,7 @@ const CategoryOverview = () => {
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
-                            <div>
-                                <img src="/icon/gallery.png" alt="" />
-                            </div>
+
                             <p className="text-sm md:text-base">6</p>
                         </button>
                     </div>
@@ -318,27 +254,17 @@ const CategoryOverview = () => {
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
                             <p className="bg-blue-100 px-2 py-1 text-sm">HOBBIES-SPORTS</p>
-                            <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img src="/icon/rectangle.png" alt="" />
-                                </span>
-                            </div>
+
                         </div>
                         <hr className="border" />
                         <div className="space-y-1 md:space-y-3">
-                            <p className="text-xl font-semibold pt-2">
-                                Sunny Slope Suites
+                            <p className="text-lg font-semibold pt-2">
+                                HOBBIES-SPORTS category related essentials can be found here
                             </p>
                             <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img
-                                        className="w-3 md:w-4"
-                                        src="/icon/location.png"
-                                        alt=""
-                                    />
-                                </span>
+
                                 <p className="text-sm md:text-base text-gray-500">
-                                    Meadowshire Park, Greenfield, USA
+                                    More than 9 kinds of products are available
                                 </p>
                             </div>
                         </div>
@@ -355,9 +281,7 @@ const CategoryOverview = () => {
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
-                            <div>
-                                <img src="/icon/gallery.png" alt="" />
-                            </div>
+
                             <p className="text-sm md:text-base">7</p>
                         </button>
                     </div>
@@ -365,27 +289,17 @@ const CategoryOverview = () => {
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
                             <p className="bg-blue-100 px-2 py-1 text-sm">KIDS</p>
-                            <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img src="/icon/rectangle.png" alt="" />
-                                </span>
-                            </div>
+
                         </div>
                         <hr className="border" />
                         <div className="space-y-1 md:space-y-3">
-                            <p className="text-xl font-semibold pt-2">
-                                Sunny Slope Suites
+                            <p className="text-lg font-semibold pt-2">
+                                KIDS category related essentials can be found here
                             </p>
                             <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img
-                                        className="w-3 md:w-4"
-                                        src="/icon/location.png"
-                                        alt=""
-                                    />
-                                </span>
+
                                 <p className="text-sm md:text-base text-gray-500">
-                                    Meadowshire Park, Greenfield, USA
+                                    More than 8 kinds of products are available
                                 </p>
                             </div>
                         </div>
@@ -402,9 +316,7 @@ const CategoryOverview = () => {
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
-                            <div>
-                                <img src="/icon/gallery.png" alt="" />
-                            </div>
+
                             <p className="text-sm md:text-base">8</p>
                         </button>
                     </div>
@@ -412,27 +324,17 @@ const CategoryOverview = () => {
                     <div className=" relative px-6 py-4">
                         <div className=" flex gap-2 justify-between pb-3">
                             <p className="bg-blue-100 px-2 py-1 text-sm">PETS AND ANIMAL</p>
-                            <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img src="/icon/rectangle.png" alt="" />
-                                </span>
-                            </div>
+
                         </div>
                         <hr className="border" />
                         <div className="space-y-1 md:space-y-3">
-                            <p className="text-xl font-semibold pt-2">
-                                Sunny Slope Suites
+                            <p className="text-lg font-semibold pt-2">
+                                PETS AND ANIMAL category related essentials can be found here
                             </p>
                             <div className=" flex gap-2 items-center">
-                                <span>
-                                    <img
-                                        className="w-3 md:w-4"
-                                        src="/icon/location.png"
-                                        alt=""
-                                    />
-                                </span>
+
                                 <p className="text-sm md:text-base text-gray-500">
-                                    Meadowshire Park, Greenfield, USA
+                                    More than 4 kinds of products are available
                                 </p>
                             </div>
                         </div>
