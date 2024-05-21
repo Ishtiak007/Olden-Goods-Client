@@ -76,7 +76,7 @@ const CategoryOverview = () => {
                     <div className="relative">
                         <img
                             className="object-cover object-center  w-full h-56"
-                            src="https://i.ibb.co/G33QMMK/kenny-eliason-i-Aftd-Icgp-Fc-unsplash.jpg"
+                            src="https://i.ibb.co/4KytLqg/kenny-eliason-i-Aftd-Icgp-Fc-unsplash.jpg"
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
@@ -108,7 +108,7 @@ const CategoryOverview = () => {
                     <div className="relative">
                         <img
                             className="object-cover object-center  w-full h-56"
-                            src="https://i.ibb.co/bPgHzqb/daria-nepriakhina-x-Y55b-L5m-ZAM-unsplash.jpg"
+                            src="https://i.ibb.co/9HjpnZp/daria-nepriakhina-x-Y55b-L5m-ZAM-unsplash.jpg"
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
@@ -142,7 +142,7 @@ const CategoryOverview = () => {
                     <div className="relative">
                         <img
                             className="object-cover object-center  w-full h-56"
-                            src="https://i.ibb.co/417YNB8/manu-b-Tlk-Jdq-H6m-UQ-unsplash.jpg"
+                            src="https://i.ibb.co/489vB1W/manu-b-Tlk-Jdq-H6m-UQ-unsplash.jpg"
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
@@ -178,7 +178,7 @@ const CategoryOverview = () => {
                     <div className="relative">
                         <img
                             className="object-cover object-center  w-full h-56"
-                            src="https://i.ibb.co/sJhPPc6/david-lezcano-Nf-Zi-OJz-Zgcg-unsplash.jpg"
+                            src="https://i.ibb.co/nMc6RV7/david-lezcano-Nf-Zi-OJz-Zgcg-unsplash.jpg"
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
@@ -213,7 +213,7 @@ const CategoryOverview = () => {
                     <div className="relative">
                         <img
                             className="object-cover object-center  w-full h-56"
-                            src="https://i.ibb.co/BqsKfgn/jamie-street-a-Muq-Xz7-R-M-unsplash.jpg"
+                            src="https://i.ibb.co/341yCmZ/jamie-street-a-Muq-Xz7-R-M-unsplash.jpg"
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
@@ -248,7 +248,7 @@ const CategoryOverview = () => {
                     <div className="relative">
                         <img
                             className="object-cover object-center  w-full h-56"
-                            src="https://i.ibb.co/KrBVDgx/alessandro-bogliari-o-Ds-Axe-R5g4-unsplash.jpg"
+                            src="https://i.ibb.co/JcPQRNy/alessandro-bogliari-o-Ds-Axe-R5g4-unsplash.jpg"
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
@@ -284,7 +284,7 @@ const CategoryOverview = () => {
                     <div className="relative">
                         <img
                             className="object-cover object-center  w-full h-56"
-                            src="https://i.ibb.co/f22qQ07/jerry-wang-LXIH6-QHz6ko-unsplash.jpg"
+                            src="https://i.ibb.co/j4q4Shk/jerry-wang-LXIH6-QHz6ko-unsplash.jpg"
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
@@ -320,7 +320,7 @@ const CategoryOverview = () => {
                     <div className="relative">
                         <img
                             className="object-cover object-center  w-full h-56"
-                            src="https://i.ibb.co/BP7MczL/img3.jpg"
+                            src="https://i.ibb.co/Rc3HBfb/img3.jpg"
                             alt="image"
                         />
                         <button className=" absolute bottom-4 left-4 flex justify-center items-center gap-2 bg-white px-2 py-1 text-sm rounded-lg ">
