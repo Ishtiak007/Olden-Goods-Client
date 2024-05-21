@@ -69,7 +69,7 @@ const CategoryOverview = () => {
         ],
     };
     return (
-        <div className="slider-container my-8 px-4 lg:px-0">
+        <div className="slider-container my-10 px-4 lg:px-0">
             <Slider {...settings}>
                 {/* 1 */}
                 <div className=" bg-gray-50 overflow-hidden rounded-lg">

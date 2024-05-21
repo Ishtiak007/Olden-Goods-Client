@@ -27,7 +27,7 @@ const Sponsor = () => {
                 <p className="text-center text-xl">
                     We collaborate with{" "}
                     <span className="text-Teal">
-                        100+ leading universities ans companies
+                        20+ leading partnership
                     </span>
                 </p>
                 <motion.div

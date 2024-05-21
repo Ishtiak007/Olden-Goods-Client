@@ -39,16 +39,18 @@ const Home = () => {
                 <CategoryOverview></CategoryOverview>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <Sponsor></Sponsor>
-            </div>
 
             <div data-aos="fade-up" data-aos-duration="1500">
                 <RegisterLink></RegisterLink>
             </div>
 
+
             <div data-aos="fade-up" data-aos-duration="1500">
                 <Testimonial></Testimonial>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <Sponsor></Sponsor>
             </div>
         </div>
     );
