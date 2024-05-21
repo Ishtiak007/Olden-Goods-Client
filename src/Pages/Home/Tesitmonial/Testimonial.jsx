@@ -28,7 +28,7 @@ const Testimonial = () => {
     return (
         <section className="">
             <SectionTitle heading={'Feedback about our platform'} subHeading={'Our regular seller and buyer about our platform'}></SectionTitle>
-            <Swiper spaceBetween={30}
+            <Swiper spaceBetween={10}
                 centeredSlides={true}
                 autoplay={{
                     delay: 2500,
@@ -39,10 +39,10 @@ const Testimonial = () => {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper">
+                className="mySwiper text-center mx-auto">
                 {
                     reviews.map(review => <SwiperSlide key={review._id}>
-                        <div className="lg:my-16 lg:mx-24 flex flex-col items-center lg:max-w-2xl p-3 shadow-xl bg-gray-400 bg-opacity-10 rounded-2xl">
+                        <div className="lg:my-16 lg:mx-24 flex flex-col items-center lg:max-w-2xl mx-auto p-3 shadow-xl bg-gray-400 bg-opacity-10 rounded-2xl">
 
                             <h3 className="lg:text-2xl font-bold flex items-center gap-2 my-3">{review.name}
                                 <p><FaQuoteRight className="text-5xl mx-auto text-gray-200"></FaQuoteRight></p></h3>
