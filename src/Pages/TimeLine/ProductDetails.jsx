@@ -54,7 +54,7 @@ const ProductDetails = () => {
 
 
     return (
-        <div>
+        <div className='p-5 mb-10'>
             <div style={{
                 backgroundImage: `url(${image1})`, backgroundAttachment: 'fixed',
                 backgroundSize: 'cover',

@@ -5,7 +5,7 @@ const CategoryCard = ({ data }) => {
     const { image, title, categoryName, category } = data;
     return (
         <Link to={`/productsCategory/${category}`}>
-            <div className="card lg:w-96 md:w-96 bg-base-100 shadow-xl">
+            <div className="card cardEffect lg:w-96 md:w-96 bg-base-100 shadow-xl">
                 <div className="card-body lg:h-32">
                     <h2 className="card-title uppercase">{categoryName}</h2>
                     <p>{title}</p>
