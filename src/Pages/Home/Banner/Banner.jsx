@@ -11,7 +11,7 @@ const Banner = () => {
             backgroundImage: `url(${img})`, backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
         }}>
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-teal-950 bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-5xl">
                     <Marquee>
