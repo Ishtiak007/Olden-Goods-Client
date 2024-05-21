@@ -8,6 +8,7 @@ import Testimonial from "../Tesitmonial/Testimonial";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Sponsor from "../Sponsor/Sponsor";
 
 
 const Home = () => {
@@ -36,6 +37,10 @@ const Home = () => {
 
             <div data-aos="fade-up" data-aos-duration="1500">
                 <CategoryOverview></CategoryOverview>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <Sponsor></Sponsor>
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1500">
