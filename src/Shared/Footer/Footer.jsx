@@ -1,87 +1,89 @@
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6';
+
 import logo from '../../assets/image/logo.png'
+import { motion } from "framer-motion";
+import {
+    BsFacebook,
+    BsInstagram,
+    BsTwitter,
+    BsPinterest,
+} from "react-icons/bs";
 
 const Footer = () => {
     return (
-        <div className="bg-[#ECF5FF] mt-10 md:mt-20 md:px-6 lg:px-0">
-            <div className="max-w-7xl mx-auto">
-                <footer className="footer pl-10 md:pl-5 lg:pl-0 py-10 text-gray-600">
-                    <aside>
-                        <div className="flex justify-center items-center">
-                            <img className="w-[90px] h-[70px]" src={logo} alt="logo" />
-                            <p className="text-3xl font-semibold">Olden Goods</p>
-                        </div>
+        <motion.div
+            initial={{ height: 0 }}
+            whileInView={{ height: "auto" }}
+            transition={{ duration: 1 }}
+            className="bg-teal-800 p-10"
+        >
+            <div className="grid md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 place-items-start gap-8 text-white">
+                <div>
+                    <div className="flex justify-center items-center">
+                        <img className="w-[70px] h-[50px]" src={logo} alt="logo" />
+                        <p className="text-3xl font-semibold">Olden Goods</p>
+                    </div>
 
-                        <p className=" w-[80%] lg:w-[60%] md:font-semibold mt-3">
-                            Design amazing digital experiences that create more happy in the
-                            world.
-                        </p>
-                    </aside>
-
-                    <nav>
-                        <h6 className="footer-title">Product</h6>
-                        <a className="link link-hover">Overview</a>
-                        <a className="link link-hover">Features</a>
-                        <a className="link link-hover">Solutions</a>
-                        <a className="link link-hover">Tutorials</a>
-                        <a className="link link-hover">Pricing</a>
-                        <a className="link link-hover">Releases</a>
-                    </nav>
-                    <nav>
-                        <h6 className="footer-title">Company</h6>
-                        <a className="link link-hover">About us</a>
-                        <a className="link link-hover">Careers</a>
-                        <a className="link link-hover">Press</a>
-                        <a className="link link-hover">News</a>
-                        <a className="link link-hover">Media Kit</a>
-                        <a className="link link-hover">Contact</a>
-                    </nav>
-                    <nav>
-                        <h6 className="footer-title">Resources</h6>
-                        <a className="link link-hover">Blog</a>
-                        <a className="link link-hover">NewsLetter</a>
-                        <a className="link link-hover">Events</a>
-                        <a className="link link-hover">Help Center</a>
-                        <a className="link link-hover">Tutorials</a>
-                        <a className="link link-hover">Support</a>
-                    </nav>
-
-                    <nav>
-                        <h6 className="footer-title">Social</h6>
-                        <a className="link link-hover">Twitter</a>
-                        <a className="link link-hover">Linkedin</a>
-                        <a className="link link-hover">Facebook</a>
-                        <a className="link link-hover">GitHub</a>
-                        <a className="link link-hover">AngleList</a>
-                        <a className="link link-hover">Dribble</a>
-                    </nav>
-                    <nav>
-                        <h6 className="footer-title">Legal</h6>
-                        <a className="link link-hover">Terms</a>
-                        <a className="link link-hover">Privacy</a>
-                        <a className="link link-hover">Cookies</a>
-                        <a className="link link-hover">Lincenses</a>
-                        <a className="link link-hover">Settings</a>
-                        <a className="link link-hover">Contact</a>
-                    </nav>
-                </footer>
-
-                <hr className=" border-[#C5E2FF]" />
-
-                <footer className="footer items-center p-4 pl-10 md:pl-5 lg:pl-0 text-gray-600">
-                    <aside className="items-center grid-flow-col">
-                        <p>© 2024 Olden Goods . All rights reserved.</p>
-                    </aside>
-                    <nav className="grid-flow-col items-center gap-4 md:place-self-center md:justify-self-end">
-                        <p className="font-semibold">Follow Us</p>
-                        <FaFacebook></FaFacebook>
-                        <FaGithub></FaGithub>
-                        <FaLinkedin></FaLinkedin>
-                        <FaInstagram></FaInstagram>
-                    </nav>
-                </footer>
+                    <p className=" w-[80%] lg:w-[80%] mt-3">
+                        Design amazing digital experiences that create more happy in the
+                        world.
+                    </p>
+                </div>
+                <div>
+                    <div className="font-bold mb-6">Services</div>
+                    <div className="flex flex-col gap-4">
+                        <a href="" className="text-sm hover:underline">
+                            Web Design
+                        </a>
+                        <a href="" className="text-sm hover:underline">
+                            Web Development
+                        </a>
+                        <a href="" className="text-sm hover:underline">
+                            {" "}
+                            Science
+                        </a>
+                        <a href="" className="text-sm hover:underline">
+                            Digital Marketing
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div className="font-bold mb-6">Company</div>
+                    <div className="flex flex-col gap-4">
+                        <a href="" className="text-sm hover:underline">
+                            Privacy Policy
+                        </a>
+                        <a href="" className="text-sm hover:underline">
+                            Sitemap
+                        </a>
+                        <a href="" className="text-sm hover:underline">
+                            Careers
+                        </a>
+                        <a href="" className="text-sm hover:underline">
+                            Terms & Conditions
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div className="font-bold mb-6">Follow us</div>
+                    <div className="text-sm mb-4">ishtiakahmed18899@gmail.com</div>
+                    <div className="text-sm">+8801521742729</div>
+                    <div className="flex gap-4 mt-4">
+                        <a href="" className="hover:scale-110 text-xl">
+                            <BsFacebook />
+                        </a>
+                        <a href="" className="hover:scale-110 text-xl">
+                            <BsInstagram />
+                        </a>
+                        <a href="" className="hover:scale-110 text-xl">
+                            <BsTwitter />
+                        </a>
+                        <a href="" className="hover:scale-110 text-xl">
+                            <BsPinterest />
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

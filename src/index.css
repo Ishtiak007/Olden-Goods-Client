@@ -89,6 +89,24 @@ body{
 	border: 1px solid orange;
 }
 
+.cardEffect{
+	border: 1px solid transparent;
+	border-radius: 25px;
+    color: black;
+    font-weight: 500;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+    border: 1px solid yellow;
+}
+.cardEffect:hover{
+	background-color: var(--bg-clr-two);
+	color: rgb(31, 28, 28);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid orange;
+}
+
 
 
 
