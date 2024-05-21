@@ -21,7 +21,7 @@ const Testimonial = () => {
             "authorName": "Ishtiak Ahmed",
             "authorPosition": "Web Developer",
             "imageUrl":
-                "https://i.ibb.co/x1dS58K/IMG-20210618-180837.jpg"
+                "https://i.ibb.co/KNG2vV3/IMG-20210618-180837-1.jpg"
         },
         {
             "rating": "4.5",
@@ -49,7 +49,7 @@ const Testimonial = () => {
         }
     ]
     return (
-        <section className="">
+        <div className="p-5">
             <SectionTitle heading={'Feedback about our platform'} subHeading={'Our regular seller and buyer about our platform'}></SectionTitle>
             <Swiper
                 // pagination={true}
@@ -65,7 +65,7 @@ const Testimonial = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </section>
+        </div>
     );
 };
 
