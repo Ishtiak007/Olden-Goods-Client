@@ -27,29 +27,29 @@ const Home = () => {
                 <Banner></Banner>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <AfterBanner></AfterBanner>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <Category></Category>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <CategoryOverview></CategoryOverview>
             </div>
 
 
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <RegisterLink></RegisterLink>
             </div>
 
 
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-left" data-aos-duration="1500">
                 <Testimonial></Testimonial>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-right" data-aos-duration="1500">
                 <Sponsor></Sponsor>
             </div>
         </div>
